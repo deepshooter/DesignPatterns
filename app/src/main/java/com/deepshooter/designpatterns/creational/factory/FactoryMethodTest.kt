@@ -1,35 +1,10 @@
 package com.deepshooter.designpatterns.creational.factory
 
+import com.deepshooter.designpatterns.creational.factory.country.Country
+import com.deepshooter.designpatterns.creational.factory.country.Greece
+import com.deepshooter.designpatterns.creational.factory.country.India
+import com.deepshooter.designpatterns.creational.factory.country.USA
 import org.junit.jupiter.api.Test
-
-sealed class Country {
-
-    object Canada : Country()
-
-}
-
-
-object Spain : Country()
-class Greece(val someProperty: String) : Country()
-data class USA(val someProperty: String) : Country()
-object India : Country()
-
-
-class Currency(val code: String)
-
-object CurrencyFactory {
-
-    fun currencyForCountry(country: Country): Currency =
-        when (country) {
-            is Spain -> Currency("EUR")
-            is Greece -> Currency("EUR")
-            is USA -> Currency("USD")
-            is Country.Canada -> Currency("CAD")
-            is India -> Currency("INR")
-        }
-
-}
-
 
 class FactoryMethodTest {
 
