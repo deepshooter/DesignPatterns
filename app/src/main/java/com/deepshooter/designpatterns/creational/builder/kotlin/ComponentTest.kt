@@ -1,4 +1,4 @@
-package com.deepshooter.designpatterns.creational.builder
+package com.deepshooter.designpatterns.creational.builder.kotlin
 
 import org.junit.jupiter.api.Test
 

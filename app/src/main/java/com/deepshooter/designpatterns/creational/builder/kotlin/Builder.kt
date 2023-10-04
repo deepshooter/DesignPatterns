@@ -1,4 +1,4 @@
-package com.deepshooter.designpatterns.creational.builder
+package com.deepshooter.designpatterns.creational.builder.kotlin
 
 class Component private constructor(builder: Builder) {
 

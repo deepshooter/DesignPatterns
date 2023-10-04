@@ -1,9 +1,9 @@
-package com.deepshooter.designpatterns.creational.factory
+package com.deepshooter.designpatterns.creational.factory.kotlin
 
-import com.deepshooter.designpatterns.creational.factory.country.Country
-import com.deepshooter.designpatterns.creational.factory.country.Greece
-import com.deepshooter.designpatterns.creational.factory.country.India
-import com.deepshooter.designpatterns.creational.factory.country.USA
+import com.deepshooter.designpatterns.creational.factory.kotlin.country.Country
+import com.deepshooter.designpatterns.creational.factory.kotlin.country.Greece
+import com.deepshooter.designpatterns.creational.factory.kotlin.country.India
+import com.deepshooter.designpatterns.creational.factory.kotlin.country.USA
 import org.junit.jupiter.api.Test
 
 class FactoryMethodTest {

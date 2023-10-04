@@ -1,4 +1,4 @@
-package com.deepshooter.designpatterns.creational.singleton
+package com.deepshooter.designpatterns.creational.singleton.kotlin
 
 
 object NetworkDriver {
