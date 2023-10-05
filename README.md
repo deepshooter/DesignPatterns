@@ -9,7 +9,7 @@ Design patterns is basically a solution or blueprint for a problem that we get o
 
 
 
-**Creational Design Patterns:**
+**Creational Design Patterns :**
 1. Singleton Pattern
 2. Factory Pattern
 3. Abstract Factory Pattern
