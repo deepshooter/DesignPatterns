@@ -14,4 +14,18 @@ package com.deepshooter.designpatterns.creational.singleton
  * 4.Utility Classes
  *
  *
+ * Properties:
+ * 1.Creational Design Pattern
+ * 2.Only One Instance of the class should exist
+ * 3.Other Classes Should be able to get instance of Singleton Class
+ * 4.Used in Logging, Cache, Sessions
+ *
+ *
+ * Single Design Pattern : Implementation
+ *-Constructor should be private
+ *-Public Method for returning instance
+ *-Instance Type - Private Static
+ *
+ *
+ *
  * */
