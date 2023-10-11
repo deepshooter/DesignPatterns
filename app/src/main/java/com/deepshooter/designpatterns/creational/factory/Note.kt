@@ -13,6 +13,8 @@ package com.deepshooter.designpatterns.creational.factory
  * classes based on input and requirement. Then we create factory class which takes the
  * responsibility of creating object of class on based of input.
  *
+ * Factory Method Design Pattern.
+ *
  * Advantages of Factory Design Pattern:
  * 1. Focus on creating object for interface rather than implementation.
  * 2. Loose Coupling
