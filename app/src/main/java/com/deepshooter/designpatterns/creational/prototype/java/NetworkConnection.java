@@ -1,9 +1,22 @@
 package com.deepshooter.designpatterns.creational.prototype.java;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NetworkConnection implements Cloneable{
 
     private String ip;
     private String importantData;
+
+    private List<String> domains = new ArrayList<>();
+
+    public List<String> getDomains() {
+        return domains;
+    }
+
+    public void setDomains(List<String> domains) {
+        this.domains = domains;
+    }
 
     public String getIp() {
         return ip;
@@ -23,6 +36,12 @@ public class NetworkConnection implements Cloneable{
 
     public void loadImportantData() {
         this.importantData = "Very Very Important Data";
+
+        domains.add("www.google.com");
+        domains.add("www.meta.com");
+        domains.add("www.instagram.com");
+        domains.add("www.github.com");
+
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -36,6 +55,7 @@ public class NetworkConnection implements Cloneable{
         return "NetworkConnection{" +
                 "ip='" + ip + '\'' +
                 ", importantData='" + importantData + '\'' +
+                ", domains=" + domains +
                 '}';
     }
 
@@ -43,8 +63,17 @@ public class NetworkConnection implements Cloneable{
     public NetworkConnection clone() {
         try {
             NetworkConnection clone = (NetworkConnection) super.clone();
-            // TODO: copy mutable state here, so the clone can't change the internals of the original
-            return clone;
+
+            // Logic for cloning: For Deep Copy
+            NetworkConnection networkConnection = new NetworkConnection();
+            networkConnection.setIp(this.getIp());
+            networkConnection.setImportantData(this.getImportantData());
+
+            for (String d : this.getDomains()) {
+                networkConnection.getDomains().add(d);
+            }
+
+            return networkConnection;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }

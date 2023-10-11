@@ -11,14 +11,20 @@ public class Main {
         networkConnection.setIp("192.168.4.11");
         networkConnection.loadImportantData();
 
-        System.out.println(networkConnection);
+
 
         //We want new object of network connection
-
         NetworkConnection newNetworkConnection = networkConnection.clone();
-        System.out.println(newNetworkConnection);
-
         NetworkConnection otherNetworkConnection = networkConnection.clone();
+
+
+        System.out.println(networkConnection);
+
+        networkConnection.getDomains().remove(0);
+
+        System.out.println(networkConnection);
+
+        System.out.println(newNetworkConnection);
         System.out.println(otherNetworkConnection);
 
 
