@@ -1,4 +1,4 @@
-package com.deepshooter.designpatterns.structural.facade.java;
+package com.deepshooter.designpatterns.structural.facade.java.exampleone;
 
 public class Main {
 
