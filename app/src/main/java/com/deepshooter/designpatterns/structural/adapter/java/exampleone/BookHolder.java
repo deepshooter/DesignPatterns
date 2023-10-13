@@ -1,4 +1,5 @@
-package com.deepshooter.designpatterns.structural.adapter.java;
+package com.deepshooter.designpatterns.structural.adapter.java.exampleone;
+
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
