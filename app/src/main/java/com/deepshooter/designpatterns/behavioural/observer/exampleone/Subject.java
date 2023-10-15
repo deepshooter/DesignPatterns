@@ -6,6 +6,6 @@ public interface Subject {
 
     void unSubscribe(MyObserver myObserver);
 
-    void notifyChanges();
+    void notifyChanges(String title);
 
 }

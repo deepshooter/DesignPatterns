@@ -4,13 +4,16 @@ public class Main {
 
     public static void main(String[] args){
 
-        YoutubeChannel youtubeChannel = new YoutubeChannel();
+        Subject youtubeChannel = new YoutubeChannel();
 
-        Subscriber aman = new Subscriber();
+        MyObserver aman = new Subscriber("Aman");
+        MyObserver raman = new Subscriber("Raman");
 
         youtubeChannel.subscribe(aman);
+        youtubeChannel.subscribe(raman);
 
-        youtubeChannel.notifyChanges();
+        youtubeChannel.notifyChanges("Learn Jetpack Compose");
+        youtubeChannel.notifyChanges("Learn Kotlin");
 
     }
 

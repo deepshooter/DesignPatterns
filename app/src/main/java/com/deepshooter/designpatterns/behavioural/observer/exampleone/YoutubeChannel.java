@@ -19,10 +19,10 @@ public class YoutubeChannel implements Subject {
     }
 
     @Override
-    public void notifyChanges() {
+    public void notifyChanges(String title) {
 
         for (MyObserver myObserver : this.subscribers) {
-            myObserver.notified();
+            myObserver.notified(title);
         }
     }
 
